@@ -1,0 +1,87 @@
+.site-header {
+ padding: 15px 0;
+ background-color:rgba(242, 206, 218, 0.3);
+}
+
+.header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.hero {
+ width: 665px;
+}
+
+.header__list {
+ margin: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ list-style: none;
+ gap: 40px;
+}
+
+.header__link {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 16px;
+ color: #150101;
+ opacity: 0.6;
+ text-decoration: none;
+}
+
+.header__link:hover {
+ color: #D23166;
+ opacity: 1;
+}
+
+.header__link:active {
+ color: #150101;
+ opacity: 1;
+}
+
+.btn {
+ display: inline-block;
+ font-family: 'Hind Madurai', sans-serif;
+ padding: 14px 50px;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 22px;
+ color: #FAFAFA;
+ background: #D23166;
+ border-radius: 5px;
+ text-decoration: none;
+}
+
+.btn:hover {
+ background: #150101;
+ color: #F2CEDA;
+}
+
+.btn:active {
+ opacity: .6;
+}
+
+@media only screen and (max-width: 1150px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .header__list{
+     display: none;
+    }
+
+    .header__btn{
+     display: none;
+    }
+
+    .site-header{
+     display: none;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    
+}

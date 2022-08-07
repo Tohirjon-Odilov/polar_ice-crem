@@ -1,3 +1,55 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-madurai-regular - latin */
+@font-face {
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/hind-madurai-v11-latin-regular.woff2") format("woff2"), url("../fonts/hind-madurai-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-madurai-600 - latin */
+@font-face {
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/hind-madurai-v11-latin-600.woff2") format("woff2"), url("../fonts/hind-madurai-v11-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-madurai-700 - latin */
+@font-face {
+  font-family: "Hind Madurai";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/hind-madurai-v11-latin-700.woff2") format("woff2"), url("../fonts/hind-madurai-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fredoka-one-regular - latin */
+@font-face {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/fredoka-one-v13-latin-regular.woff2") format("woff2"), url("../fonts/fredoka-one-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -310,11 +362,15 @@ template {
 
 * {
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Fredoka One", cursive;
+  font-family: "Hind Madurai", sans-serif;
 }
 
 img {
@@ -336,5 +392,156 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: __px;
+  max-width: 1165px;
+}
+
+.site-header {
+  padding: 15px 0;
+  background-color: rgba(242, 206, 218, 0.3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  width: 665px;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.header__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #150101;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #D23166;
+  opacity: 1;
+}
+
+.header__link:active {
+  color: #150101;
+  opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Hind Madurai", sans-serif;
+  padding: 14px 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FAFAFA;
+  background: #D23166;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #150101;
+  color: #F2CEDA;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .site-header {
+    display: none;
+  }
+}
+.hero-section {
+  background-color: rgba(242, 206, 218, 0.3);
+  padding: 196px 0 213px;
+  background-image: url(../../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 350px) center;
+}
+
+.hero__small {
+  margin-bottom: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #0F0101;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  color: #0F0101;
+  opacity: 0.9;
+}
+
+.hero__text-wrapper {
+  width: 523px;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0F0101;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    display: none;
+  }
+}
+.mobile-text {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-main {
+    display: none;
+  }
+  .mobile-text {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fredoka One", cursive;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .site-footer {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
