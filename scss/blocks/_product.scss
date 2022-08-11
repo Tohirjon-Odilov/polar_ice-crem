@@ -1,0 +1,133 @@
+.product__title {
+ margin-bottom: 64px;
+ font-weight: 600;
+ font-size: 44.2px;
+ line-height: 61px;
+ color: #150101;
+ text-align: center;
+}
+
+.product__list {
+ margin: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 40px;
+ list-style: none;
+}
+
+.product__link {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 21px;
+ color: #000000;
+ opacity: 0.6;
+ text-decoration: none;
+ position: relative;
+}
+
+.product__link::before {
+ content: " ";
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ margin: 0 auto;
+ width: 0;
+ height: 3px;
+ display: inline-block;
+ background-color: #D23166;
+ transition: all .3s;
+}
+
+.product__link:hover::before {
+ width: 100%;
+}
+
+.product__link:active::before {
+ opacity: .6;
+}
+
+.product__link:hover {
+ color: #000000;
+ opacity: 1;
+}
+
+.product__link:active {
+ opacity: .6;
+ color: #D23166;
+}
+
+.product__card-list{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+
+.product__card-item {
+ display: flex;
+ align-items: center;
+ gap: 85px;
+}
+
+.product__card-item:nth-child(even) {
+ flex-direction: row-reverse;
+}
+
+.product__card-item:nth-child(2){
+ text-align: right;
+ .product__money-wrapper{
+  justify-content: flex-end;
+ }
+}
+
+.prduct__card-title {
+ margin: 0;
+ margin-bottom: 11px;
+ font-weight: 700;
+ font-size: 26px;
+ line-height: 36px;
+ color: #000000;
+}
+
+.product__card-text {
+ margin: 0;
+ margin-bottom: 24px;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 24px;
+ color: #000000;
+ opacity: 0.7;
+}
+
+.product__money-wrapper {
+ display: flex;
+ align-items: flex-end;
+ gap: 5px;
+ margin-bottom: 10px;
+
+ ins {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+  color: #000000;
+  text-decoration: none;
+ }
+
+ del {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  // text-decoration-line: line-through;
+  color: #000000;
+  opacity: 0.7;
+ }
+}
+
+.product__user-wrapper{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}

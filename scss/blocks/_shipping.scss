@@ -1,0 +1,41 @@
+.shipping__list {
+ margin: 0;
+ margin-bottom: 100px;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 39px;
+ list-style: none;
+}
+
+.shipping__item {
+ width: 250px;
+ padding: 33px 26px 27px;
+ background: #FFFFFF;
+ box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+ border-radius: 7px;
+ text-align: center;
+}
+
+.shipping__item img {
+ margin-bottom: 25px;
+}
+
+.shipping__title {
+ margin: 0;
+ font-weight: 600;
+ font-size: 20px;
+ line-height: 28px;
+ color: #000000;
+}
+
+.shipping__text {
+ margin: 0;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 19px;
+ text-align: center;
+ color: #000000;
+ opacity: 0.6;
+}
