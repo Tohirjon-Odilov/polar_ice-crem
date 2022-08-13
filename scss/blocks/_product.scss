@@ -1,3 +1,7 @@
+.product-section{
+  margin-bottom: 149px;
+}
+
 .product__title {
  margin-bottom: 64px;
  font-weight: 600;
@@ -83,6 +87,20 @@
  }
 }
 
+.product__user-wrapper{
+  margin-bottom: 46px;
+}
+
+.user-wrapper__content{
+  h4{
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  p{
+    margin: 0;
+  }
+}
+
 .prduct__card-title {
  margin: 0;
  margin-bottom: 11px;
@@ -130,4 +148,14 @@
  display: flex;
  align-items: center;
  gap: 10px;
+}
+
+.product__img-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.cursor{
+  cursor: pointer;
 }

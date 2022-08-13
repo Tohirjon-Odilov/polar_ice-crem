@@ -237,16 +237,93 @@
 										Foodie Moments.
 									</blockquote>
 									<div class="product__img-wrapper">
+										<img
+											src="./images/left-arrow.svg"
+											alt="Arrow left"
+											class="cursor"
+										/>
 										<img src="./images/man.svg" alt="Man" />
 										<img src="./images/woman-red.svg" alt="Woman" />
 										<img src="./images/woman-small.svg" alt="Woman" />
+										<img
+											src="./images/right-arrow.svg"
+											alt="Arrow right"
+											class="cursor"
+										/>
 									</div>
-									<a href="#link" class="product__card-btn btn btn-pink">
-										Buy Now
-									</a>
 								</div>
 							</li>
 						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="simple-section">
+				<div class="container">
+					<div class="simple">
+						<div class="simple__img">
+							<img
+								src="./images/simple.png"
+								width="305"
+								height="627"
+								alt="Phone"
+							/>
+						</div>
+						<div class="simple__content">
+							<h2 class="simple__title">Simple Way To Order Your Food</h2>
+							<p class="simple__text">
+								Some food has looked so awful that it's looked like something
+								that the dog's brought home, yet after one mouthful I've been
+								left eating my thoughts.
+							</p>
+							<div class="simple__list-wrapper">
+								<div class="simple__item">Select Your Food</div>
+								<div class="simple__item">Add To Cart</div>
+								<div class="simple__item">Order Your Food</div>
+							</div>
+							<div class="simpler__small-img--wrapper">
+								<a href="#link"><img src="./images/google.png" alt="" /></a>
+								<a href="#link"><img src="./images/apple.png" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question-section">
+				<div class="container">
+					<div class="question">
+						<div class="question__title-wrapper">
+							<h2 class="question__title">
+								Have Question in Mind? Let us help you
+							</h2>
+						</div>
+						<form
+							action="https://echo.htmlacademy.ru"
+							method="POST"
+							class="question__form"
+						>
+							<div class="question__form-wrapper">
+								<input
+									type="tel"
+									placeholder="Your phone number"
+									name="userPhoneNumber"
+								/>
+								<select name="questions" id="questions">
+									<option value="question1">question-1</option>
+									<option value="question2">question-2</option>
+									<option value="question" selected>Question type</option>
+								</select>
+							</div>
+							<div class="question__btn-wrapper">
+								<input
+									type="text"
+									placeholder="Enter your question"
+									name="userQuestions"
+								/>
+								<button type="submit" class="btn btn-pink">Send</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -255,7 +332,27 @@
 		<!-- Site Footer Start  -->
 		<footer class="site-footer">
 			<div class="container">
-				<div class="footer-inner footer"></div>
+				<div class="footer-inner footer">
+					<img src="./images/footer-logo.svg" width="79" height="79" alt="Footer logo" class="footer__logo">
+					<div class="footer__content">
+						<div class="footer__list">
+							<div class="footer__item">
+								<div class="footer__sublist">
+									<p class="footer__sublist-text">
+										Some food has looked so awful that it's looked like something that the dog's brought home.
+									</p>
+									<p class="footer__sublist-follow">Fllow Us</p>
+									<div class="footer__social-wrapper">
+										<a href="#link"><img src="./images/facebook.svg" width="15" height="15" alt="facebook" /></a>
+										<a href="#link"><img src="./images/twitter.svg" width="15" height="15" alt="twitter" /></a>
+										<a href="#link"><img src="./images/instagram.svg" width="15" height="15" alt="instagram" /></a>
+										<a href="#link"><img src="./images/linkedin.svg" width="15" height="15" alt="linkedin" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 		<!-- Site Footer End  -->
