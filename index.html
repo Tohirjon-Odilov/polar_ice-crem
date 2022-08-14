@@ -30,10 +30,10 @@
 					</a>
 					<ul class="header__list">
 						<li class="header__item">
-							<a href="#link" class="header__link">Home</a>
+							<a href="#home" class="header__link">Home</a>
 						</li>
 						<li class="header__item">
-							<a href="#link" class="header__link">Product</a>
+							<a href="#product" class="header__link">Product</a>
 						</li>
 						<li class="header__item">
 							<a href="#link" class="header__link">Pricing</a>
@@ -141,22 +141,22 @@
 				</div>
 			</section>
 
-			<section class="product-section">
+			<section class="product-section" id="product">
 				<div class="container">
 					<div class="product">
 						<h2 class="product__title">Our Product</h2>
 						<ul class="product__list">
 							<li class="product__item">
-								<a href="#link" class="product__link">ICE CREAM</a>
+								<a href="#ice_cream" class="product__link">ICE CREAM</a>
 							</li>
 							<li class="product__item">
-								<a href="#link" class="product__link">CAYENNE CHOCOLATE</a>
+								<a href="#cayenne_chocolate" class="product__link">CAYENNE CHOCOLATE</a>
 							</li>
 							<li class="product__item">
-								<a href="#link" class="product__link">CAKE BATTER</a>
+								<a href="#cake_batter" class="product__link">CAKE BATTER</a>
 							</li>
 							<li class="product__item">
-								<a href="#link" class="product__link">CANDY CANE</a>
+								<a href="#candy_cane" class="product__link">CANDY CANE</a>
 							</li>
 							<li class="product__item">
 								<a href="#link" class="product__link">PLATTERS</a>
@@ -169,7 +169,7 @@
 						<ul class="product__card-list">
 							<li class="product__card-item">
 								<img src="./images/product-1.png" alt="Ice-Cream" />
-								<div class="product__content-wrapper">
+								<div class="product__content-wrapper" id="ice_cream">
 									<h3 class="prduct__card-title">Brown bread</h3>
 									<p class="product__card-text">
 										Bon Au Pain is a pioneer in the healthy fast food scene.Bon
@@ -185,7 +185,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="product__card-item">
+							<li class="product__card-item" id="cayenne_chocolate">
 								<img src="./images/product-2.png" alt="Ice-Cream" />
 								<div class="product__content-wrapper">
 									<h3 class="prduct__card-title">Cayenne chocolate</h3>
@@ -203,7 +203,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="product__card-item">
+							<li class="product__card-item" id="cake_batter">
 								<img src="./images/product-3.png" alt="Ice-Cream" />
 								<div class="product__content-wrapper">
 									<h3 class="prduct__card-title">Sweet corn</h3>
@@ -221,7 +221,7 @@
 									</a>
 								</div>
 							</li>
-							<li class="product__card-item">
+							<li class="product__card-item" id="candy_cane">
 								<img src="./images/product-4.png" alt="Ice-Cream" />
 								<div class="product__card-content--wrapper">
 									<div class="product__user-wrapper">
@@ -333,22 +333,78 @@
 		<footer class="site-footer">
 			<div class="container">
 				<div class="footer-inner footer">
-					<img src="./images/footer-logo.svg" width="79" height="79" alt="Footer logo" class="footer__logo">
+					<img
+						src="./images/footer-logo.svg"
+						width="79"
+						height="79"
+						alt="Footer logo"
+						class="footer__logo"
+					/>
 					<div class="footer__content">
 						<div class="footer__list">
 							<div class="footer__item">
 								<div class="footer__sublist">
 									<p class="footer__sublist-text">
-										Some food has looked so awful that it's looked like something that the dog's brought home.
+										Some food has looked so awful that it's looked like
+										something that the dog's brought home.
 									</p>
 									<p class="footer__sublist-follow">Fllow Us</p>
 									<div class="footer__social-wrapper">
-										<a href="#link"><img src="./images/facebook.svg" width="15" height="15" alt="facebook" /></a>
-										<a href="#link"><img src="./images/twitter.svg" width="15" height="15" alt="twitter" /></a>
-										<a href="#link"><img src="./images/instagram.svg" width="15" height="15" alt="instagram" /></a>
-										<a href="#link"><img src="./images/linkedin.svg" width="15" height="15" alt="linkedin" /></a>
+										<a href="#link"
+											><img
+												src="./images/facebook.svg"
+												width="15"
+												height="15"
+												alt="facebook"
+										/></a>
+										<a href="#link"
+											><img
+												src="./images/twitter.svg"
+												width="15"
+												height="15"
+												alt="twitter"
+										/></a>
+										<a href="#link"
+											><img
+												src="./images/instagram.svg"
+												width="15"
+												height="15"
+												alt="instagram"
+										/></a>
+										<a href="#link"
+											><img
+												src="./images/linkedin.svg"
+												width="15"
+												height="15"
+												alt="linkedin"
+										/></a>
 									</div>
 								</div>
+							</div>
+							<div class="footer__item">
+								<a href="#" class="footer__item-link">Home</a>
+								<a href="#link" class="footer__item-link">Product</a>
+								<a href="#link" class="footer__item-link">Blog</a>
+								<a href="#link" class="footer__item-link">Pricing</a>
+								<a href="#link" class="footer__item-link">Testimonials</a>
+								<a href="#link" class="footer__item-link">Contact Us</a>
+							</div>
+							<div class="footer__item">
+								<a href="#link" class="footer__item-link">Delivery Information</a>
+								<a href="#link" class="footer__item-link">Privacy Policy</a>
+								<a href="#link" class="footer__item-link">Terms & Condition</a>
+								<a href="#link" class="footer__item-link">Search Terms</a>
+								<a href="#link" class="footer__item-link">Order & Return</a>
+							</div>
+							<div class="footer__item">
+								<p>Newsletter</p>
+								<form action="https://echo.htmlacademy.ru" method="POST">
+									<input type="email" placeholder="Your Email">
+									<button type="submit" class="btn btn-pink">Subscribe</button>
+								</form>
+								 <a href="#link"><img src="./images/footer-pp.svg" alt=""></a>
+								 <a href="#link"><img src="./images/master-card.svg" alt=""></a>
+								 <a href="#link"><img src="./images/viza.svg" alt=""></a>
 							</div>
 						</div>
 					</div>
