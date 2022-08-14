@@ -3,4 +3,4 @@
 
 ## Beautiful website
 
-### Show Website. [One Click](tohirjon-polar-icecream.netlify.app)
+### Show Website. [One Click](https://tohirjon-polar-icecream.netlify.app)
